@@ -11,7 +11,7 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 
 from pythonosc import udp_client
 
-@app.route("/play", methods=['POST'])
+@app.route("/", methods=['POST'])
 @cross_origin()
 def sound_play():
 	board = request.form['board']
@@ -22,16 +22,16 @@ def sound_play():
 	client.send_message(board_location, 1)
 	return ""
 
-@app.route("/stop", methods=['POST'])
-@cross_origin()
-def sound_play():
-	board = request.form['board']
-	id = request.form['id']
+# @app.route("/stop", methods=['POST'])
+# @cross_origin()
+# def sound_play():
+# 	board = request.form['board']
+# 	id = request.form['id']
 
-	board_location = '/castersoundboard/board/' + str(board) + '/player/' + str(id) + '/modify/play_state/play'
-	client = udp_client.SimpleUDPClient('127.0.0.1', 5051)
-	client.send_message(board_location, 1)
-	return ""
+# 	board_location = '/castersoundboard/board/' + str(board) + '/player/' + str(id) + '/modify/play_state/play'
+# 	client = udp_client.SimpleUDPClient('127.0.0.1', 5051)
+# 	client.send_message(board_location, 1)
+# 	return ""
 
 
 
