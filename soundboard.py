@@ -4,12 +4,12 @@ from flask import Flask
 from flask_cors import CORS, cross_origin
 from flask import request
 from flask import json
+from pythonosc import udp_client
 app = Flask(__name__)
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
 
-from pythonosc import udp_client
 
 @app.route("/playback", methods=['POST'])
 @cross_origin()
