@@ -35,6 +35,8 @@
   <div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('ROTY', 'G')">Weiners in the nosebleed</button></div>
   <div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('ROTY', 'H')">Yes!, Yes!</button></div>
   <div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('ROTY', 'J')">Show me respect</button></div>
+  <div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('ROTY', 'K')">Intro Squarepusher</button></div>
+  <div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('ROTY', 'Z')">Knows what hes doing</button></div>
 </div>
 
 
@@ -93,7 +95,7 @@
 
 
 function soundboard(board, id) {
-	$.post("http://192.168.1.7/playback",
+	$.post("http://192.168.0.245/playback",
 	{
 		board: board,
 		id: id
