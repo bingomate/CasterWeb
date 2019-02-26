@@ -45,6 +45,8 @@
 	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('LeonardPart6', 'N')">Feat no meat</button></div>
 	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('LeonardPart6', 'M')">Jaime I crave you</button></div>
 	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('LeonardPart6', ',')">College Graduate</button></div>
+	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('LeonardPart6', '1')">Wife 2</button></div>
+	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('LeonardPart6', '2')">Wife 3</button></div>
 </div>
 
 
@@ -59,7 +61,7 @@
   <div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('Common_1', 5)">Sniffing Coke</button></div>
   <div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('Common_1', 6)">Huh?</button></div>
   <div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('Common_1', 7)">It Stinks</button></div>
-  <div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('Common_1', 8)">Windows Shutdown</button></div>
+  <div class="p-2 bd-highlight"><button type="button" class="btn btn-warning btn-lg" onclick="soundboard('Common_1', 8)">Windows Shutdown</button></div>
   <div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('Common_1', 'Q')">Lawn Jeans</button></div>
   <div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('Common_1', 'W')">Today Junior</button></div>
   <div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('Common_1', 'E')">Vodka</button></div>
@@ -107,7 +109,7 @@
   <div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('Common_2', 'J')">Totally Gay</button></div>
   <div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('Common_2', 'K')">That fucking bone</button></div>
   <div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('Common_2', 'Z')">Hiccup</button></div>
-  <div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('Common_2', 'X')">Mumble</button></div>
+  <div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('Common_2', 'X')">Studdering John</button></div>
   <div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('Common_2', 'C')">Maine Accent</button></div>
   <div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('Common_2', 'V')">Call me Coltrane?</button></div>
   <div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('Common_2', 'B')">Talk some jive</button></div>
@@ -118,7 +120,7 @@
 
 
 function soundboard(board, id) {
-	$.post("http://192.168.1.252/playback",
+	$.post("http://192.168.1.125/playback",
 	{
 		board: board,
 		id: id
