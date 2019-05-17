@@ -22,8 +22,28 @@ def sound_play():
 	client.send_message(board_location, 1)
 	return ""
 
+@app.route("/pause", methods=['POST'])
+@cross_origin()
+def sound_pause():
+	board = request.form['board']
+	id = request.form['id']
+
+	board_location = '/castersoundboard/board/' + str(board) + '/player/' + str(id) + '/modify/play_state/pause'
+	client = udp_client.SimpleUDPClient('127.0.0.1', 5051)
+	client.send_message(board_location, 1)
+	return ""
+
+@app.route("/resume", methods=['POST'])
+@cross_origin()
+def sound_resume():
+	board = request.form['board']
+	id = request.form['id']
+
+	board_location = '/castersoundboard/board/' + str(board) + '/player/' + str(id) + '/modify/play_state/resume'
+	client = udp_client.SimpleUDPClient('127.0.0.1', 5051)
+	client.send_message(board_location, 1)
+	return ""
 
 
 if __name__ == '__main__':
 	app.run(host = '0.0.0.0',port=5000)
-
