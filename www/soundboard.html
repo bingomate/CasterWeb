@@ -13,8 +13,8 @@
 <div class="header"><center>HotRod</center></div>
 <hr>
 <div class="d-flex flex-row flex-wrap bd-highlight mb-3">
-	<div class="p-2 bd-highlight"><button type="button" class="btn btn-warning btn-lg" onclick="soundboard('HotRod', 1)">Wait Babe</button></div>
-	<div class="p-2 bd-highlight"><button type="button" class="btn btn-warning btn-lg" onclick="soundboard('HotRod', 2)">Dog Pizza Nap</button></div>
+	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('HotRod', 1)">Wait Babe</button></div>
+	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('HotRod', 2)">Dog Pizza Nap</button></div>
 	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('HotRod', 3)">Take it easy</button></div>
 	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('HotRod', 4)">Play the victim</button></div>
 	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('HotRod', 5)">Drop Some Dumpage</button></div>
@@ -45,8 +45,8 @@
 	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('HotRod', 'N')">Got this acid</button></div>
 	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('HotRod', 'M')">Balls Man</button></div>
 	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('HotRod', ',')">Hospital Trashcan</button></div>
-	<div class="p-2 bd-highlight"><button type="button" class="btn btn-warning btn-lg" onclick="soundboard('HotRod2', 1)">No shit</button></div>
-	<div class="p-2 bd-highlight"><button type="button" class="btn btn-warning btn-lg" onclick="soundboard('HotRod2', 2)">Dong Bags</button></div>
+	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('HotRod2', 1)">No shit</button></div>
+	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('HotRod2', 2)">Dong Bags</button></div>
 	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('HotRod2', 3)">Who cares</button></div>
 	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('HotRod2', 4)">Number One</button></div>
 	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('HotRod2', 5)">Jump Them</button></div>
@@ -123,8 +123,16 @@
 	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('Common_3', 4)">listen fuck head</button></div>
 	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('Common_3', 5)">peice of shit</button></div>
 	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('Common_3', 7)">son of a bitch</button></div>
-	<div class="p-2 bd-highlight"><button type="button" class="btn btn-success btn-lg" onclick="soundboard('Common_3', 'Q')">stop pusing your shit</button></div>
-	<div class="p-2 bd-highlight"><button type="button" class="btn btn-danger btn-lg" onclick="soundboard('Common_3', 'W')">whats your problem</button></div>
+	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('Common_3', 8)">Whats your problem</button></div>
+	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('Common_3', 'Q')">Small Brain</button></div>
+	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('Common_3', 'W')">Escalated</button></div>
+	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('Common_3', 'E')">Smash Your Face</button></div>
+	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('Common_3', 'R')">Asking You a goddamn thing</button></div>
+	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('Common_3', 'T')">Pathetic Loser</button></div>
+	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('Common_3', 'Y')">Lets Move on</button></div>
+	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('Common_3', 'U')">Like To Party</button></div>
+	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('Common_3', 'I')">Break Your Concentration</button></div>
+	<div class="p-2 bd-highlight"><button type="button" class="btn btn-primary btn-lg" onclick="soundboard('Common_3', 'A')">You mad?</button></div>
 </div>
 
 
@@ -141,7 +149,7 @@
 //Main playback control function
 function soundboard(board, id) {
 
-	$.post("http://192.168.17.253/playback",
+	$.post("http://192.168.17.194/playback",
 	{
 		board: board,
 		id: id
